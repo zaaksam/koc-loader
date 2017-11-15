@@ -1,6 +1,6 @@
 {
   "name": "koc-loader",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Knockout component loader for webpack",
   "main": "index.js",
   "directories": {
@@ -37,5 +37,10 @@
     "style-loader": "*",
     "html-loader": "*",
     "css-loader": "*"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "html-loader": "^0.5.1",
+    "style-loader": "^0.19.0"
   }
 }
