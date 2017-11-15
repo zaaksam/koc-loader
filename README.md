@@ -1,4 +1,4 @@
-# ko-loader
+# koc-loader
 
 Knockout component loader for webpack
 
