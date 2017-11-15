@@ -1,6 +1,6 @@
 {
-  "name": "ko-loader",
-  "version": "0.1.0",
+  "name": "koc-loader",
+  "version": "0.1.1",
   "description": "Knockout component loader for webpack",
   "main": "index.js",
   "directories": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Zaaksam/ko-loader.git"
+    "url": "https://github.com/Zaaksam/koc-loader.git"
   },
   "keywords": [
     "knockout",
@@ -18,9 +18,9 @@
   "author": "Zaaksam",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Zaaksam/ko-loader/issues"
+    "url": "https://github.com/Zaaksam/koc-loader/issues"
   },
-  "homepage": "https://github.com/Zaaksam/ko-loader#readme",
+  "homepage": "https://github.com/Zaaksam/koc-loader#readme",
   "dependencies": {
     "consolidate": "^0.15.0",
     "de-indent": "^1.0.2",

@@ -4,7 +4,7 @@ Knockout component loader for webpack
 
 You can write component file like Vue:
 
-hello.ko
+hello.koc
 
 ```html
 <template>
@@ -18,7 +18,7 @@ export default class Component {
     info: KnockoutObservable<string>;
 
     constructor(params: any) {
-        this.info = ko.observable("hello ko-loader");
+        this.info = ko.observable("hello koc-loader");
     }
 }
 </script>
@@ -31,8 +31,8 @@ Webpack.config.js:
     module: {
         rules: [
             {
-                test: /\.ko$/,
-                loader: 'ko-loader'
+                test: /\.koc$/,
+                loader: 'koc-loader'
             }
         ]
     }
@@ -43,7 +43,7 @@ app.ts (app.js)
 
 ```ts
 import ko from 'knockout'
-import Hello from './hello.ko'
+import Hello from './hello.koc'
 
 ko.components.register('hello', Hello)
 
