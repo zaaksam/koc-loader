@@ -29,7 +29,18 @@ Webpack.config.js:
 ```js
 {
     module: {
+        resolve: {
+            extensions: ['.ts', '.js', '.koc']
+        },
         rules: [
+            {
+                test: /\.ts$/,
+                loader: 'ts-loader',
+                exclude: /node_modules/,
+                options: {
+                    appendTsSuffixTo: [/\.koc$/]
+                }
+            },
             {
                 test: /\.koc$/,
                 loader: 'koc-loader'
@@ -59,6 +70,17 @@ index.html
     </body>
     <script src="http://host/app.js"></script>
 </html>
+```
+
+koc.d.ts
+
+```ts
+/// <reference types="knockout" />
+
+declare module "*.koc" {
+    const koc: KnockoutComponentTypes.Config
+    export default koc
+}
 ```
 
 Thanks:
