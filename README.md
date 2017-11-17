@@ -2,6 +2,8 @@
 
 Knockout component loader for webpack
 
+[中文说明示例](https://my.oschina.net/zaaksam/blog/1574629)
+
 You can write component file like Vue:
 
 hello.koc
